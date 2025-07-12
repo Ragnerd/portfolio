@@ -1,5 +1,5 @@
 "use client";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
 const stats = [
   {
@@ -46,7 +46,7 @@ const Stats = () => {
                 </p>
               </div>
             );
-          })};
+          })}
         </div>
       </div>
     </section>
