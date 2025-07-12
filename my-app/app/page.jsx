@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Socials";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
@@ -35,11 +36,12 @@ export default function Home() {
             </div>
           </div>
           {/* photo */}
-          <div>
-            <Photo className="order xl:order-none mb:8 xl:mb-0"/>
+          <div className="order xl:order-none mb:8 xl:mb-0">
+            <Photo />
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
