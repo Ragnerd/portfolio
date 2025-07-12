@@ -1,9 +1,9 @@
 "use client";
-import CountUp from "react-countup";
+import CountUp from 'react-countup';
 
 const stats = [
   {
-    num: "2",
+    num: 2,
     text: "Years of experience",
   },
   {
@@ -31,7 +31,7 @@ const Stats = () => {
                 <CountUp end={item.num} duration={5} delay={2} className="text-4xl xl:text-6xl font-extrabold" />
               </div>
             );
-          })}
+          })};
         </div>
       </div>
     </section>
