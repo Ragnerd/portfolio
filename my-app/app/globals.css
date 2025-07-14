@@ -9,8 +9,8 @@
   --font-*: initial;
   --font-primary: "Jetbrains Mono", monospace;
   --color-primary: #1c1c22;
-  --color-accent-default: #00ff99;
-  --color-accent-hover: #00e187;
+  --color-accent-default: #24EAEA;
+  --color-accent-hover: #16fffe;
 }
 
 @layer base {

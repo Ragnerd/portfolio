@@ -41,24 +41,27 @@ const Services = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="flex flex-col justify-center gap-6 group">
                 {/* serial number */}
-                <div>
-                  <div>{service.num}</div>
+                <div className="w-full flex justify-between items-center">
+                  <div className="text-5xl font-extrabold">{service.num}</div>
                   <Link href={service.href}>
-                    <BsArrowDownRight/>
+                    <BsArrowDownRight />
                   </Link>
                 </div>
+
                 {/* title */}
                 <h2>{service.title}</h2>
+
                 {/* description */}
                 <p>{service.description}</p>
                 <div className="border-b border-white/30 w-full"></div>
               </div>
-            )
+            );
           })}
         </motion.div>
       </div>
